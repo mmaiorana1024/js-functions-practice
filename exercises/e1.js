@@ -11,7 +11,7 @@
  * logMessage() => 'Hello, World!'
  */
 
-var logMessage = function () {
+const logMessage = function () {
   console.log("Hello, World!");
 };
 
@@ -27,11 +27,11 @@ logMessage();
  * logMyMessage('My message') => 'My message'
  */
 
-var logMyMessage = function (m) {
+const logMyMessage = function (m) {
   console.log(m);
 };
 
-var message = "I logged my first message!";
+let message = "I logged my first message!";
 
 logMyMessage(message);
 
@@ -48,7 +48,7 @@ const logMessageWithMyName = function (n) {
   console.log("My name is " + n + "!");
 };
 
-var name = "Andrey";
+let name = "Andrey";
 
 logMessageWithMyName(name);
 
@@ -66,8 +66,7 @@ const logMyInfo = function (n, a) {
   console.log("My name is " + n + ". I am " + a + " years old!");
 };
 
-var name = "Andrey";
-var age = 18;
+let age = 18;
 
 logMyInfo(name, age);
 
