@@ -13,9 +13,18 @@
  * doesArrayIncludeItemsBetweenVals([2, 4, 2], 5, 10) => false
  */
 
-// Your code goes here...
+const doesArrayIncludeItemsBetweenVals = function (arr, val1, val2) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > val1 && arr[i] < val2) {
+      return true;
+    }
+  }
+  return false;
+};
 
-
+let arrOfNums = [2, 4, 2];
+doesArrayIncludeItemsBetweenVals(arrOfNums, 3, 5);
+doesArrayIncludeItemsBetweenVals(arrOfNums, 5, 10);
 
 /**
  * ====================================================
@@ -24,20 +33,49 @@
  * Arrow Function name: getValueWithConditionTwo;
  * Variable name for the function expression: getValueWithConditionThree;
  * All three functions resolve the same task:
-    * The function takes two numbers as arguments
-    * If the numbers are both equal to 40, return the sum of them
-    * Else return the doubled sum of them
+ * The function takes two numbers as arguments
+ * If the numbers are both equal to 40, return the sum of them
+ * Else return the doubled sum of them
  * getValueWithConditionOne(40, 40) => 80;
  * getValueWithConditionOne(20, 30) => 100;
  */
+const getValueWithConditionOne = function (val1, val2) {
+  if (val1 === 40 && val2 === 40) {
+    return val1 + val2;
+  } else {
+    return (val1 + val2) * 2;
+  }
+};
 
+getValueWithConditionOne(40, 40);
+getValueWithConditionOne(20, 30);
 
+const getValueWithConditionTwo = (val1, val2) => {
+  if (val1 === 40 && val2 === 40) {
+    return val1 + val2;
+  } else {
+    return (val1 + val2) * 2;
+  }
+};
+
+getValueWithConditionTwo(40, 40);
+getValueWithConditionTwo(20, 30);
+
+function getValueWithConditionThree(val1, val2) {
+  if (val1 === 40 && val2 === 40) {
+    return val1 + val2;
+  } else {
+    return (val1 + val2) * 2;
+  }
+}
+
+getValueWithConditionThree(40, 40);
+getValueWithConditionThree(20, 30);
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-3"
 // If the test has all tests passed, switch to the next exercise file
 // If any of the tests fails, refactor the code and run the test command after you've fixed the function
-
 
 // Do not delete or change the lines beneath
 const f = {
@@ -45,5 +83,5 @@ const f = {
   getValueWithConditionOne: getValueWithConditionOne || undefined,
   getValueWithConditionTwo: getValueWithConditionTwo || undefined,
   getValueWithConditionThree: getValueWithConditionThree || undefined,
-}
+};
 export { f };
