@@ -27,8 +27,8 @@ logMessage();
  * logMyMessage('My message') => 'My message'
  */
 
-const logMyMessage = function (m) {
-  console.log(m);
+const logMyMessage = function (message) {
+  console.log(message);
 };
 
 let message = "I logged my first message!";
@@ -44,8 +44,8 @@ logMyMessage(message);
  * logMessageWithMyName('Andrey') => 'My name is Andrey!'
  */
 
-const logMessageWithMyName = function (n) {
-  console.log("My name is " + n + "!");
+const logMessageWithMyName = function (name) {
+  console.log("My name is " + name + "!");
 };
 
 let name = "Andrey";
@@ -62,8 +62,8 @@ logMessageWithMyName(name);
  * logMyInfo('Andrey', 18) => 'My name is Andrey. I am 18 years old!'
  */
 
-const logMyInfo = function (n, a) {
-  console.log("My name is " + n + ". I am " + a + " years old!");
+const logMyInfo = function (name, age) {
+  console.log("My name is " + name + ". I am " + age + " years old!");
 };
 
 let age = 18;

@@ -39,35 +39,26 @@ doesArrayIncludeItemsBetweenVals(arrOfNums, 5, 10);
  * getValueWithConditionOne(40, 40) => 80;
  * getValueWithConditionOne(20, 30) => 100;
  */
-const getValueWithConditionOne = function (val1, val2) {
-  if (val1 === 40 && val2 === 40) {
-    return val1 + val2;
-  } else {
-    return (val1 + val2) * 2;
-  }
-};
+function getValueWithConditionOne(val1, val2) {
+  if (val1 === 40 && val2 === 40) return val1 + val2;
+  return (val1 + val2) * 2;
+}
 
 getValueWithConditionOne(40, 40);
 getValueWithConditionOne(20, 30);
 
 const getValueWithConditionTwo = (val1, val2) => {
-  if (val1 === 40 && val2 === 40) {
-    return val1 + val2;
-  } else {
-    return (val1 + val2) * 2;
-  }
+  if (val1 === 40 && val2 === 40) return val1 + val2;
+  return (val1 + val2) * 2;
 };
 
 getValueWithConditionTwo(40, 40);
 getValueWithConditionTwo(20, 30);
 
-function getValueWithConditionThree(val1, val2) {
-  if (val1 === 40 && val2 === 40) {
-    return val1 + val2;
-  } else {
-    return (val1 + val2) * 2;
-  }
-}
+const getValueWithConditionThree = function (val1, val2) {
+  if (val1 === 40 && val2 === 40) return val1 + val2;
+  return (val1 + val2) * 2;
+};
 
 getValueWithConditionThree(40, 40);
 getValueWithConditionThree(20, 30);
